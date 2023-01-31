@@ -29,9 +29,9 @@ int main(int argc, char* argv[])
 	string f_name = new_name.str();
 
         stringstream ss;
-       // ss << "/home/kay/frames/color_.jpg";
+       // ss << "/home/frames/color_.jpg";
        // std::cout << "I copied\n";         
-        ss << "/home/kay/rgbd_dataset_freiburg1_xyz/rgb/" << f_name << ".png";
+        ss << "/home/rgbd_dataset_freiburg1_xyz/rgb/" << f_name << ".png";
        // std::cout << "I copied\n"; 
         std::string image_name;
         image_name =  ss.str();
