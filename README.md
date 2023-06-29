@@ -2,7 +2,7 @@
 
 Imitation DQN aims to bring a supervised learned agent that can navigate in any indoor environment using SLAM without facing tracking failures. Our technique is also tested in the real world. Watch our testing video below: 
 
-[![Watch the video](https://img.youtube.com/vi/4cow2oj-7Ek/hqdefault.jpg)](https://youtu.be/4cow2oj-7Ek)
+[![Watch the video](https://img.youtube.com/vi/VQ5cSm4JBDY/hqdefault.jpg)](https://youtu.be/VQ5cSm4JBDY)
 
 We launch our training files as well as the pre-trained agent for the research community to test our agent and reuse the agent for further improvements. 
 
