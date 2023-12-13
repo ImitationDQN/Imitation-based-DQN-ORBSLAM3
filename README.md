@@ -1,4 +1,4 @@
-# Imitation-based-DQN-to-avoid-tracking-failures-in-ORBSLAM3
+# Imitation-based-DQN-to-avoid-tracking-failures-in-ORBSLAM3 with released Dataset
 
 Imitation DQN aims to bring a supervised learned agent that can navigate in any indoor environment using SLAM without facing tracking failures. Our technique is also tested in the real world. Watch our testing video below: 
 
