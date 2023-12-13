@@ -2,8 +2,7 @@
 
 Bringing a new take to avoid tracking failures in ORBSLAM3 especially when the robot is facing challenging transitional scenarios like doors and texturless lobbies or featureless walls. We have trained our agent under challenging transition situations with the help of an expert human. We release our extensive training dataset of 50 hours which can be utilized by the SLAM community for offline training. 
 
-![](https://github.com/ImitationDQN/Imitation-based-DQN-to-avoid-tracking-failures-in-ORBSLAM3-with-released-dataset/blob/main/GIF.mp4)
-
+![Model](https://github.com/ImitationDQN/Imitation-based-DQN-to-avoid-tracking-failures-in-ORBSLAM3-with-released-dataset/blob/main/dataset.jpg)
 
 Our technique is also tested in the real world. Watch our testing video below: 
 
