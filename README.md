@@ -1,12 +1,26 @@
 # Imitation-based-DQN-to-avoid-tracking-failures-in-ORBSLAM3 with released Dataset
 
-Imitation DQN aims to bring a supervised learned agent that can navigate in any indoor environment using SLAM without facing tracking failures. Our technique is also tested in the real world. Watch our testing video below: 
+Bringing a new take to avoid tracking failures in ORBSLAM3 especially when the robot is facing challenging transitional scenarios like doors and texturless lobbies or featureless walls. We have trained our agent under challenging transition situations with the help of an expert human. We release our extensive training dataset of 50 hours which can be utilized by the SLAM community for offline training. 
+
+
+
+
+Our technique is also tested in the real world. Watch our testing video below: 
 
 [![Watch the video](https://img.youtube.com/vi/VQ5cSm4JBDY/hqdefault.jpg)](https://youtu.be/VQ5cSm4JBDY)
 
-We launch our training files as well as the pre-trained agent for the research community to test our agent and reuse the agent for further improvements. 
+Furthermore, we launch our training files as well as the pre-trained agent for the research community to test our agent and reuse the agent for further improvements. 
 
-## 1. Pre-requisites
+## 1. Dateset with 6D groundtruth
+
+
+* The color images are stored as 600x400 8-bit RGB images in JPG format.
+* The depth images are stored as 600x400 8-bit monochrome images in JPG format.
+* We provide the groundtruth trajectory as a text file
+     * Each line in the text file contains a single pose.
+     * The format of each line is 'timestamp tx ty tz qx qy qz'
+
+## 2. Pre-requisites for training and testing
 
 * Ubuntu 16.04, 180.04 or 20.04
 * C++ 11 Compiler
@@ -21,7 +35,7 @@ https://github.com/minosworld/minos
 https://github.com/UZ-SLAMLab/ORB_SLAM3
 * ROS
 
-## 2. Environemnt Setup
+## 3. Environemnt Setup
 
 For agent training and testing, we are using MINOS as simulator, localization and mapping is done with the help of ORB-SLAM3 and the environment control is achieved via ROS topics. After successful installation of all prerequisites, follow these simple steps to set up the complete environment. 
 
@@ -89,7 +103,7 @@ Simply download the given bash file and from terminal run *bash start.sh*
 This will start the SLAM3 and MINOS simulator. A rostopic will also be initiated in parallel by this file which is responsible for publishing images over SLAM3. 
 
 
-## 3. Train and Test the agent
+## 4. Train and Test the agent
 
 * Download the agent.pt and Imitation_agent.py and place in these files catkin_ws/src/merger_node/scripts
 * Now from the scripts of merger_node provide in terminal the following command for testing and training. 
@@ -97,6 +111,8 @@ This will start the SLAM3 and MINOS simulator. A rostopic will also be initiated
 *python3 imitation_agent.py --dqn_test*
 
 *python3 imitation_agent.py --dqn_train*
+
+
 
 
 
