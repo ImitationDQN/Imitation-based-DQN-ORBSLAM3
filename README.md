@@ -22,7 +22,7 @@ Furthermore, we launch our training files as well as the pre-trained agent for t
 
 ## 2. Pre-requisites for training and testing
 
-* Ubuntu 16.04, 180.04 or 20.04
+* Ubuntu 16.04, 18.04 or 20.04
 * C++ 11 Compiler
 * Pangolin 
 https://github.com/stevenlovegrove/Pangolin.
