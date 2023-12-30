@@ -17,7 +17,9 @@ Furthermore, we launch our training files as well as the pre-trained agent for t
 * The depth images are stored as 600x400 8-bit monochrome images in JPG format.
 * We provide the groundtruth trajectory as a text file
      * Each line in the text file contains a single pose.
-     * The format of each line is 'timestamp tx ty tz qx qy qz'
+     * The format of each line is 'timestamp px py pz qx qy qz'
+* The link for our dataset is
+  https://drive.google.com/drive/folders/14ZYgEKaFeUHnN5YuE3bJUuxc3VKHNvCl?usp=sharing
 
 ## 2. Pre-requisites for training and testing
 
